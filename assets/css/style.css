@@ -182,7 +182,7 @@ h4, .h4 {
     height: 625px;
 }
 .section5{
-    width: 1920px;
+    width: 100%;
     height: 900px;
     position: relative;
 }
@@ -204,7 +204,7 @@ h4, .h4 {
   font-weight: 400;
   color: #D97456;
   white-space: nowrap;
-  width: 120px;        /* 라벨 너비 고정 */
+  width: 120px;      
 }
 
 .section5-m-text {
@@ -228,11 +228,10 @@ h4, .h4 {
   gap: 80px;
 }
 
-/* ✅ 핵심: 숫자와 + 를 하나의 flex 컨테이너로 묶기 */
 .number-wrap {
   display: flex;
   flex-direction: row;
-  align-items: center;   /* 세로 가운데 정렬 */
+  align-items: center;  
   gap: 12px;
 }
 
@@ -284,6 +283,7 @@ h4, .h4 {
 .img-box1{
     display: flex;
     gap: 20px  ;
+    padding-bottom: 20px;
 }
 
 .img-box1 img{
@@ -299,56 +299,48 @@ h4, .h4 {
 .img-box2 img{
     width: 427px;
     height: 344px;
+    margin-bottom: 110px;
 }
-
-
 .faq-section{
-    width: 1920px;
+    width: 100%;
     height: 620px;
-    margin: auto;
     background: #FAF6F3;
 }
-
-
-
-.faq-title{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
 .faq{
-    color: #AE6D59;
-}
-.highlight{
-    color: #AE6D59;
     display: flex;
-}
-
-.b9 {
-  font-family: var(--font-base);
-  font-size: 18px;
-  font-weight: 400;
-}
-
-.faq-list{
-    display: flex;
-    gap: 10px;
     justify-content: center;
-    padding-top: 40px;
+    text-align: center;
+    padding-top: 110px;
+}
+.faq-title{
+    padding-bottom: 40px;
+}
+
+.highlight{
+    color: #D97456;
+}
+
+
+.q1{
+    display: flex;
     background-color: #fff;
     width: 1096px;
-    height: 76px;
+    justify-content: space-between;
     margin: auto;
+    padding: 27px 15px;
+    align-items: center;
 }
-.b9{
-    color: #000;
-    padding-right: 600px;
+.q-text{
+    display: flex;
+    gap: 10px;
+}
+.q{
+    background: black;
+    border-radius: 20px;
+    color: #fff;
+    padding: 5px
+    
 }
 .q-icon{
-    width: 25px;
-    height: 25px;
-    background-color: #000;
-    border-radius: 999px;
-    color: #fff;
-
+    
 }
